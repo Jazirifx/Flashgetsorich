@@ -28,8 +28,69 @@
 
     <script>
         // Your smart contract address and ABI here
-        const contractAddress = "<YOUR_CONTRACT_ADDRESS>";
-        const contractABI = <YOUR_ABI>;
+        const contractAddress = "<0x010764a74c7C1c4844917485f5ECfe181839Eb90>";
+        const contractABI = <[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_tokenName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_tokenSymbol",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "start",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tokenName",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tokenSymbol",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdrawal",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	}
+]>;
 
         // Initialize web3 and the contract
         let web3;
